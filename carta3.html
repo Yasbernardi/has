@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>galeria do amor</title>
+    
+<body>
+   <h1>Nossa Galeria de imagens</h1> 
+    <ul class="slider">
+        <li>
+              <input type="radio" id="slide1" name="slide" checked>
+              <label for="slide1"></label>
+              <img src= 1.png />
+        </li>
+        <li>
+              <input type="radio" id="slide2" name="slide">
+              <label for="slide2"></label>
+              <img src="2.png" />
+        </li>
+        <li>
+              <input type="radio" id="slide3" name="slide">
+              <label for="slide3"></label>
+              <img src="3.png" />
+        </li>
+        <li>
+            <input type="radio" id="slide4" name="slide">
+            <label for="slide4"></label>
+            <img src="4.png" />
+      </li>
+      <li>
+        <input type="radio" id="slide5" name="slide">
+        <label for="slide5"></label>
+        <img src="5.png" />
+    </li>
+        <li>
+            <input type="radio" id="slide6" name="slide">
+            <label for="slide6"></label>
+            <img src="6.png" />
+    </li>
+    <li>
+        <input type="radio" id="slide7" name="slide">
+        <label for="slide7"></label>
+        <img src="7.png" />
+     </li>
+     <li>
+        <input type="radio" id="slide8" name="slide">
+        <label for="slide8"></label>
+        <img src="8.png" />
+    </li>
+    <li>
+        <input type="radio" id="slide9" name="slide">
+        <label for="slide9"></label>
+        <img src="9.png" />
+    </li>
+    <li>
+        <input type="radio" id="slide10" name="slide">
+        <label for="slide10"></label>
+        <img src="10.png" />
+    </li>
+    <li>
+        <input type="radio" id="slide11" name="slide">
+        <label for="slide11"></label>
+        <img src="11.png" />
+     </li>
+        <li>
+            <input type="radio" id="slide12" name="slide">
+            <label for="slide12"></label>
+            <img src="12.png" />
+    </li>
+    <li>
+        <input type="radio" id="slide13" name="slide">
+        <label for="slide13"></label>
+        <img src="13.png" />
+        </li>
+        <li>
+            <input type="radio" id="slide14" name="slide">
+            <label for="slide14"></label>
+            <img src="14.png" />
+        </li>
+        <li>
+            <input type="radio" id="slide15" name="slide">
+            <label for="slide15"></label>
+            <img src="15.png" />
+      </li>
+    </ul>
+
+</body>
+<style>
+    body{
+        background-image: url('FUN.jpg');
+        text-align: center; 
+        font-style: italic;
+    }
+    .slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    }
+
+    .slider li {
+        list-style: none;
+        position: absolute;
+    }
+
+    .slider img {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        vertical-align: top;
+    }
+    .slider input {
+        display: none;
+    }
+    .slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+    }
+
+    .slider li:nth-child(1) label {
+        left: 10px;
+    }
+
+    .slider li:nth-child(2) label {
+        left: 40px;
+    }
+
+    .slider li:nth-child(3) label {
+        left: 70px;
+    }
+    .slider li:nth-child(4) label {
+        left: 100px;
+    }
+    .slider li:nth-child(5) label {
+        left: 130px;
+    }
+    .slider li:nth-child(6) label {
+        left: 160px;
+    }
+    .slider li:nth-child(7) label {
+        left: 190px;
+    }
+    .slider li:nth-child(8) label {
+        left: 220px;
+    }
+    .slider li:nth-child(9) label {
+        left: 250px;
+    }
+    .slider li:nth-child(10) label {
+        left: 280px;
+    }
+    .slider li:nth-child(11) label {
+        left: 310px;
+    }
+    .slider li:nth-child(12) label {
+        left: 340px;
+    }
+    .slider li:nth-child(13) label {
+        left: 370px;
+    }
+    .slider li:nth-child(14) label {
+        left: 400px;
+    }
+    .slider li:nth-child(15) label {
+        left: 430px;
+    }
+    .slider img {
+    opacity: 0;
+    visibility: hidden;
+    }
+
+    .slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    }
+    * { margin: 0; padding: 0; }
+</style>
+
+</html>
